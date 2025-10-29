@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Register - DNMRC</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script> (function(){ emailjs.init('YOUR_EMAILJS_USER_ID'); })(); </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>DNMRC</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="eligibility.html">Eligibility</a>
+        <a href="benefits.html">Benefits</a>
+        <a href="register.html" class="btn">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Register for Training</h2>
+    <p>Please fill out the form below. Submissions will be sent to <strong>dnmrc0502@gmail.com</strong>.</p>
+
+    <form id="regForm">
+      <label>Full name <input type="text" name="name" required></label>
+      <label>Email <input type="email" name="email" required></label>
+      <label>Phone <input type="tel" name="phone" required></label>
+      <label>Course of interest
+        <select name="course" required>
+          <option value="">-- Select --</option>
+          <option>Research & Development</option>
+          <option>Project Engineering & Management</option>
+          <option>Testing & Quality Control</option>
+          <option>Operations</option>
+          <option>Market Research / Business Dev.</option>
+          <option>Patenting & IPR</option>
+          <option>Dissertation / Project Report</option>
+        </select>
+      </label>
+      <label>Current status (student / working / other) <input type="text" name="status"></label>
+      <label>Message / Notes <textarea name="message" rows="4"></textarea></label>
+      <div class="form-actions">
+        <button type="submit" class="btn large">Submit</button>
+        <button type="reset" class="btn ghost">Reset</button>
+      </div>
+      <p id="formMsg" class="form-msg"></p>
+    </form>
+  </main>
+
+  <script src="js/email.js"></script>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; DNMRC</p>
+    </div>
+  </footer>
+</body>
+</html>
