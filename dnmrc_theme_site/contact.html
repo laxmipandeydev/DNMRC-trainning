@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact — DNMRC</title>
+
+    <!-- Main site CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Contact form specific CSS -->
+    <link rel="stylesheet" href="css/contact-form.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="header-top container">
+        <div class="brand">
+          <img src="assets/logoo.png" alt="Logo" class="symbol" />
+          <div class="text-logo">
+            <div class="logo-title">Dr. Nilkanth Maladkar Research Center</div>
+            <div class="logo-sub">DNMRC — Research Division</div>
+          </div>
+        </div>
+
+        <nav class="nav" id="mainNav">
+          <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+            ☰
+          </button>
+          <div class="nav-links">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="about.html" class="nav-item">About</a>
+            <a href="courses.html" class="nav-item">Courses</a>
+            <a href="contact.html" class="nav-item btn">Contact / Register</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="tagline container">
+        Certified Research & Training Programs in Science & Engineering — Enroll
+        Now!
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container main-content contact-main">
+      <h2 class="page-title">Register / Contact</h2>
+
+      <form id="regForm" class="contact-card" action="#" method="post" novalidate>
+        <div class="reg-grid">
+
+          <div class="reg-field col-name">
+            <label>
+              Full name
+              <input
+                type="text"
+                name="name"
+                required
+                placeholder="Your full name"
+              />
+            </label>
+          </div>
+
+          <div class="reg-field col-email">
+            <label>
+              Email
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="you@example.com"
+              />
+            </label>
+          </div>
+
+          <div class="reg-field col-phone">
+            <label>
+              Phone
+              <input
+                type="tel"
+                name="phone"
+                placeholder="+91 9xxxxxxxxx"
+              />
+            </label>
+          </div>
+
+          <div class="reg-field col-course">
+            <label>
+              Course of interest
+              <select name="course" required>
+                <option value="">-- Select --</option>
+                <option>Research &amp; Development (Core Projects)</option>
+                <option>Project Engineering &amp; Management</option>
+                <option>Testing &amp; Quality Control</option>
+                <option>Operations &amp; Instrumentation</option>
+                <option>Market Research &amp; Techno-Commercial Skills</option>
+                <option>Patenting &amp; IPR Fundamentals</option>
+                <option>Dissertation / Project Report Guidance</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="reg-field col-message">
+            <label>
+              Message
+              <textarea
+                name="message"
+                placeholder="Optional — any questions or details you'd like to share..."
+              ></textarea>
+            </label>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">Submit</button>
+          </div>
+
+        </div>
+      </form>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <p>© 2025 DNMRC Research Division. All rights reserved.</p>
+    </footer>
+
+    <!-- Main JS -->
+    <script src="js/app.js"></script>
+    <!-- Contact form JS -->
+    <script src="js/contact-form.js"></script>
+  </body>
+</html>
